@@ -3,7 +3,7 @@ C 40000 40000 0 0 0 title-B.sym
 C 40800 45600 1 0 0 vsin-1.sym
 {
 T 41500 46250 5 10 1 1 0 0 1
-refdes=V?
+refdes=Vs1
 T 41500 46450 5 10 0 0 0 0 1
 device=vsin
 T 41500 46650 5 10 0 0 0 0 1
