@@ -8,17 +8,18 @@
 * Component Definitions
 Ci 2 0 60p
 Eamp 3 0 2 0 144
+IOut_Eamp 3 0 dc 0
+Isense_Eamp 2 0 dc 0
 Ri 2 0 100k
 Rl 4 0 1k
 Ro 3 4 200
 Rs 1 2 20k
-* Signal source (Vs 1 0 ac 1v)
-Vs 1 0 AC 1.00
+Vs 1 0 ac 1v
 
 * NG-Spice Simulation Commands
-.OPTIONS NOPAGE NUMDGT=6 UNITS=Degress WIDTH=72
-.PRINT AC VM(4,0) VP(4,0)
-.AC DEC 5 1.00 100.00Meg
+.OPTIONS NOPAGE NUMDGT=6 UNITS=Degress WIDTH=104
+.PRINT TRAN V(4,0) V(4)
+.TRAN 10.00m 100.00m 0.00m
 
 .END
 
