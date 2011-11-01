@@ -3,7 +3,7 @@
 *             Version 0.9.98 Alpha (14/10/2009)              *
 **************************************************************
 
-* Schematic : /home/lroot/Desktop/sedra-spice/ex1.1/dc_linear_network.sch
+* Schematic : /home/lroot/Desktop/sedra-spice/ex1.2/3stage_amp.sch
 
 * Component Definitions
 G1 4 0 4 3 4
@@ -22,7 +22,7 @@ Vsense_H1 7 2 dc 0
 
 * GNU-Cap Simulation Commands
 .OPTIONS NOPAGE TEMPAMB=0.00
-.PRINT DC V(Vmeter1) V(1) V(2) V(3) V(4) V(5) V(6) V(7)
+.PRINT DC V(Vmeter1) V(1) V(2) V(3) V(4) V(5) V(6) V(7) I(Vmeter1) I(1) I(2) I(3) I(4) I(5) I(6) I(7) P(Vmeter1) P(1) P(2) P(3) P(4) P(5) P(6) P(7) R(Vmeter1) R(1) R(2) R(3) R(4) R(5) R(6) R(7)
 .DC None 0.00 100.00 BY 10.00 TE 0.00 BASIC
 
 .END

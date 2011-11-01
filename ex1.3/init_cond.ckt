@@ -16,8 +16,8 @@ Vcc 3 0 DC +5V
 
 * NG-Spice Simulation Commands
 .OPTIONS NOPAGE NUMDGT=6 UNITS=Degress WIDTH=104
-.PRINT TRAN 0-V(4) V(1,0) V(2,0)
-.TRAN 500.00u 10.00m 0.00m UIC
+.PRINT TRAN V(1) V(2) V(4)
+.TRAN 500.00u 10.00m 0.00m
 
 .END
 
