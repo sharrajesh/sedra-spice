@@ -18,8 +18,11 @@ Vs 1 0 ac 1v
 
 * NG-Spice Simulation Commands
 .OPTIONS NOPAGE NUMDGT=6 UNITS=Degress WIDTH=104
-.PRINT TRAN V(4,0) V(4)
-.TRAN 10.00m 100.00m 0.00m
-
+.PRINT AC VM(4) VP(4)
+.AC DEC 5 1.00 100.00Meg
 .END
 
+.control
+run
+print vm(4) vp(4) > out.txt
+.endc
