@@ -1,0 +1,15 @@
+*******************************
+* Begin .SUBCKT model         *
+* spice-sdb ver 4.28.2007     *
+*******************************
+.SUBCKT raj_ideal_opamp 1 2 3 
+*==============  Begin SPICE netlist of main design ============
+Iopen2 3 0 0A
+Iopen1 2 0 0A
+* begin vcvs expansion, e<name>
+Eopamp 1 0 2 3 1e6
+Isense_Eopamp 2 3 dc 0
+IOut_Eopamp 1 0 dc 0
+* end vcvs expansion
+.ends raj_ideal_opamp
+*******************************

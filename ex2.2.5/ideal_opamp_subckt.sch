@@ -1,0 +1,83 @@
+v 20100214 2
+C 40000 40000 0 0 0 title-B.sym
+C 44600 47000 1 0 0 vcvs-1.sym
+{
+T 44800 48050 5 10 0 0 0 0 1
+device=SPICE-vcvs
+T 45200 47850 5 10 1 1 0 0 1
+refdes=Eopamp
+T 44800 48250 5 10 0 0 0 0 1
+symversion=0.1
+T 45300 46950 5 10 1 0 0 5 1
+value=1e6
+}
+C 46700 45700 1 0 0 gnd-1.sym
+C 41700 47700 1 270 0 current-1.sym
+{
+T 42700 47100 5 10 0 0 270 0 1
+device=CURRENT_SOURCE
+T 42200 47400 5 10 1 1 270 0 1
+refdes=Iopen1
+T 41000 47200 5 10 1 0 0 0 1
+value=0A
+}
+C 44000 47100 1 270 0 current-1.sym
+{
+T 45000 46500 5 10 0 0 270 0 1
+device=CURRENT_SOURCE
+T 44500 46800 5 10 1 1 270 0 1
+refdes=Iopen2
+T 43300 46500 5 10 1 0 0 0 1
+value=0A
+}
+C 40600 50100 1 0 0 spice-subcircuit-LL-1.sym
+{
+T 40700 50400 5 10 0 1 0 0 1
+device=spice-subcircuit-LL
+T 40500 50800 5 10 1 1 0 0 1
+refdes=X_raj_ideal_opamp
+T 40700 50200 5 10 1 1 0 0 1
+model-name=raj_ideal_opamp
+}
+C 41400 48000 1 180 0 spice-subcircuit-IO-1.sym
+{
+T 40500 47600 5 10 0 1 180 0 1
+device=spice-IO
+T 40550 47750 5 10 1 1 180 0 1
+refdes=P2
+}
+C 43600 47400 1 180 0 spice-subcircuit-IO-1.sym
+{
+T 42700 47000 5 10 0 1 180 0 1
+device=spice-IO
+T 42750 47150 5 10 1 1 180 0 1
+refdes=P3
+}
+C 47300 47400 1 0 0 spice-subcircuit-IO-1.sym
+{
+T 48200 47800 5 10 0 1 0 0 1
+device=spice-IO
+T 48150 47650 5 10 1 1 0 0 1
+refdes=P1
+}
+C 41800 45700 1 0 0 gnd-1.sym
+C 44100 45700 1 0 0 gnd-1.sym
+N 41200 47700 44600 47700 4
+{
+T 42000 47800 5 10 1 0 0 0 1
+netname=2
+}
+N 41900 46800 41900 46000 4
+N 43400 47100 44600 47100 4
+{
+T 43600 47200 5 10 1 0 0 0 1
+netname=3
+}
+N 44200 46200 44200 46000 4
+N 46100 47100 46800 47100 4
+N 46800 47100 46800 46000 4
+N 46100 47700 47500 47700 4
+{
+T 46400 47800 5 10 1 0 0 0 1
+netname=1
+}
