@@ -1,0 +1,91 @@
+v 20100214 2
+C 40000 40000 0 0 0 title-B.sym
+C 45700 46800 1 270 0 diode-1.sym
+{
+T 46300 46400 5 10 0 2 270 0 1
+device=DIODE
+T 46200 46500 5 10 0 2 270 0 1
+refdes=Dforward
+T 45700 46800 5 10 0 2 0 0 1
+model=Is=100pA n=1.679
+T 43600 46200 5 10 1 0 0 0 1
+model-name=1mA_diode
+}
+C 47900 44300 1 90 0 diode-1.sym
+{
+T 47300 44700 5 10 0 0 90 0 1
+device=DIODE
+T 47400 44600 5 10 0 2 90 0 1
+refdes=Dreverse
+T 48200 44300 5 10 1 0 0 0 1
+model-name=ideal_diode
+T 47900 44300 5 10 0 0 0 0 1
+model=Is=100pA n=0.01
+}
+C 47800 47500 1 90 0 resistor-1.sym
+{
+T 47400 47800 5 10 0 0 90 0 1
+device=RESISTOR
+T 47600 47800 5 10 1 1 90 0 1
+refdes=Rz
+T 47800 47500 5 10 1 0 0 0 1
+value=10
+}
+C 48000 46800 1 180 0 vdc-1.sym
+{
+T 47300 46150 5 10 1 1 180 0 1
+refdes=Vz0
+T 47300 45950 5 10 0 0 180 0 1
+device=VOLTAGE_SOURCE
+T 47300 45750 5 10 0 0 180 0 1
+footprint=none
+T 47300 46350 5 10 1 1 180 0 1
+value=DC 7.3V
+}
+C 36900 52800 1 0 0 spice-subcircuit-LL-1.sym
+{
+T 37000 53100 5 10 0 1 0 0 1
+device=spice-subcircuit-LL
+T 37000 53200 5 10 1 1 0 0 1
+refdes=Azener
+T 37000 52900 5 10 1 1 0 0 1
+model-name=raj_zener_diode
+}
+C 47200 49100 1 0 0 spice-subcircuit-IO-1.sym
+{
+T 48100 49500 5 10 0 1 0 0 1
+device=spice-IO
+T 48050 49350 5 10 1 1 0 0 1
+refdes=P1
+}
+C 47200 43400 1 0 0 spice-subcircuit-IO-1.sym
+{
+T 48100 43800 5 10 0 1 0 0 1
+device=spice-IO
+T 48050 43650 5 10 1 1 0 0 1
+refdes=P2
+}
+N 45900 46800 45900 48400 4
+N 45900 48400 47700 48400 4
+{
+T 46300 48500 5 10 1 0 0 0 1
+netname=1
+}
+N 47700 47500 47700 46800 4
+{
+T 47700 47100 5 10 1 0 0 0 1
+netname=3
+}
+N 47700 45600 47700 45200 4
+{
+T 47700 45400 5 10 1 0 0 0 1
+netname=4
+}
+N 47700 44300 45900 44300 4
+{
+T 46300 44400 5 10 1 0 0 0 1
+netname=2
+}
+N 45900 44300 45900 45900 4
+N 47400 49400 47400 48400 4
+N 47400 43700 47400 44300 4

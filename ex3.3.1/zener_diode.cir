@@ -1,0 +1,14 @@
+*******************************
+* Begin .SUBCKT model         *
+* spice-sdb ver 4.28.2007     *
+*******************************
+.SUBCKT raj_zener_diode 1 2 
+*==============  Begin SPICE netlist of main design ============
+Vz0 4 3 DC 7.3V
+Rz 3 1 10  
+Dreverse 2 4 ideal_diode 
+.MODEL ideal_diode D (Is=100pA n=0.01)
+Dforward 1 2 1mA_diode 
+.MODEL 1mA_diode D (Is=100pA n=1.679)
+.ends raj_zener_diode
+*******************************
