@@ -1,6 +1,6 @@
 zener_diode.sch~
 zener_diode.sym~
-#zener_regulator.sch#
 gspiceui.log
 zener_regulator.ngspice.tr
 zener_regulator.sch~
+#zener_regulator.sch#
