@@ -13,10 +13,12 @@ Vgs 2 0 DC 5V
 * Model Definitions
 .MODEL nmos_enhancement_mosfet NMOS (kp=20u Vto=+2 lambda=0)
 
-* GNU-Cap Simulation Commands
-.OPTIONS NOPAGE TEMPAMB=0.00
-.PRINT DC V(Vds) V(1) I(Vds) I(1)
-.DC Vds 0.00 10.00 BY 100.00m TE 0.00 BASIC
+* NG-Spice Simulation Commands
+*.OPTIONS NOPAGE NUMDGT=6 UNITS=Degress WIDTH=104
+*.PRINT DC V(1,0) V(1)
+*.DC Vds 0.00m 10.00 100.00m
+.DC Vds 0v 10v 100mv
+.PRINT DC I(Vds) V(1)
 
 .END
 
