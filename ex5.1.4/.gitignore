@@ -1,5 +1,7 @@
 nmos-id-vds-char.sch~
-#nmos-id-vds-char.sch#
 gspiceui.log
 nmos-id-vds-char.ngspice.dc
 out.txt
+v(1).plt
+v(1).data
+#nmos-id-vds-char.sch#
