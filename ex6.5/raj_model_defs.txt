@@ -1,0 +1,3 @@
+.model raj_npn_transistor npn (Is=18fA Bf=100 VAf=100v)
+
+.model raj_pnp_transistor pnp (Is=18fA Bf=100 VAf=100v)
