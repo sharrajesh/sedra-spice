@@ -34,9 +34,9 @@ Vcm 100 0 DC 0V
 
 *Raj- originally it was set as below, but to find the transfer function and input resistance we will set it to the input offset voltage found
 * after .op and then set the offset voltage i.e. the voltage when the input was 0
-* Vd 101 0 DC 0V
+Vd 101 0 DC 0V
 *Vd 101 0 DC -230uV AC 1V
-Vd 101 0 DC -230uV
+*Vd 101 0 DC -230uV
 Vee1 Vee 0 DC -15V
 
 * Model Definitions
@@ -48,11 +48,11 @@ Vee1 Vee 0 DC -15V
 *.OP
 *.NODESET V(6)=-0.7V
 * Raj- For large sweep
-*.DC Vd -15.00 15.00 100.00m
+.DC Vd -15.00 15.00 100.00m
 * Raj- For more focused sweep around the 0 v
 *.DC Vd -5mV 5mV 10uV
 * To sweep for common mode
-.DC Vcm -15v +15v 0.1v
+*.DC Vcm -15v +15v 0.1v
 .PRINT DC V(3)
 
 ** Raj- To do the transfer function we set vd to dc offset -230uv and we do the ac sweep
