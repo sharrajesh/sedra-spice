@@ -1,6 +1,4 @@
-.MODEL raj_integrated_npn npn  (IS=5E-17 BF=147 VAF=80 IKF=4.3E-3 ISE=8E-18 NE=1.233 
-+                               BR=1.9 VAR=11 IKR=6E-4 ISC=5E-16 NC=1.08 RE=12 RB=1200 RBM=200 RC=25 
-+                               CJE=58E-15 VJE=0.83 MJE=0.35 CJC=133E-15  VJC=0.6 MJC=0.44 XCJC=1 
-+                               CJS=830E-15 VJS=0.6 MJS=0.4 ISS=1E-16 FC=0.85 TF=60P XTF=48 ITF=3E-2
-+                               TF=10N EG=1.16 XTI=3 XTB=1.6)
-
+.MODEL RAJ_2N3904 NPN  (Is=6.734f Xti=3 Eg=1.11 Vaf=74.03 Bf=416.4 Ne=1.259 
++                       Ise=6.734f Ikf=66.78m Xtb=1.5 Br=0.7371 Nc=2 Isc=0 Ikr=0 Rc=1
++                       Cjc=3.638p Mjc=0.3085 Vjc=0.75 Fc=0.5 Cje=4.493p Mje=0.2593 Vje=0.75 
++                       Tr=239.5n Tf=301.2p Itf=0.4 Vtf=4 Xtf=2 Rb=10)

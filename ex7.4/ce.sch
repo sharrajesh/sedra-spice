@@ -50,7 +50,9 @@ C 49100 45600 1 90 0 resistor-1.sym
 T 48700 45900 5 10 0 0 90 0 1
 device=RESISTOR
 T 48800 45800 5 10 1 1 90 0 1
-refdes=R?
+refdes=Rl
+T 49100 45600 5 10 1 1 0 0 1
+value=4k
 }
 C 42600 45800 1 0 0 capacitor-1.sym
 {
@@ -63,15 +65,15 @@ symversion=0.1
 T 42600 45800 5 10 1 1 0 0 1
 value=1uF
 }
-C 47200 44200 1 90 0 capacitor-1.sym
+C 46800 45100 1 270 0 capacitor-1.sym
 {
-T 46500 44400 5 10 0 0 90 0 1
+T 47500 44900 5 10 0 0 270 0 1
 device=CAPACITOR
-T 46700 44400 5 10 1 1 90 0 1
+T 47300 44900 5 10 1 1 270 0 1
 refdes=Ce
-T 46300 44400 5 10 0 0 90 0 1
+T 47700 44900 5 10 0 0 270 0 1
 symversion=0.1
-T 47200 44200 5 10 1 1 0 0 1
+T 46800 45100 5 10 1 1 180 0 1
 value=10uF
 }
 C 46600 46300 1 0 0 capacitor-1.sym
@@ -105,7 +107,7 @@ refdes=Q1
 T 45500 45600 5 10 0 0 0 0 1
 footprint=TO92
 T 44700 45500 5 10 0 0 0 0 1
-model-name=raj_integrated_npn
+model-name=RAJ_2N3904
 T 44700 45500 5 10 0 0 0 0 1
 file=model-defs.txt
 }
@@ -163,6 +165,10 @@ C 48900 43200 1 0 0 gnd-1.sym
 N 49000 45600 49000 43500 4
 N 43800 48000 43800 47700 4
 C 41300 48400 1 0 0 vcc-1.sym
+{
+T 41300 48400 5 10 1 0 0 0 1
+netname=1
+}
 C 41200 47100 1 0 0 vdc-1.sym
 {
 T 41900 47750 5 10 1 1 0 0 1
@@ -172,7 +178,7 @@ device=VOLTAGE_SOURCE
 T 41900 48150 5 10 0 0 0 0 1
 footprint=none
 T 41900 47550 5 10 1 1 0 0 1
-value=DC 1V
+value=DC 12V
 }
 C 41400 46700 1 0 0 gnd-1.sym
 N 41500 48400 41500 48300 4
