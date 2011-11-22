@@ -1,0 +1,10 @@
+api1, 5
+api2, 10
+api3, 15
+api4, 13
+api5, 5
+api6, 6
+api7, 12
+api8, 6
+api9, 8
+api10, 18
