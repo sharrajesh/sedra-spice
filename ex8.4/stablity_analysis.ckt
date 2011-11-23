@@ -8,19 +8,22 @@
 * Component Definitions
 C1 2 3 1uF
 C2 4 0 1uF
-Egain 2 0 1 0 1
-IOut_Egain 2 0 dc 0
-Isense_Egain 1 0 dc 0
+
+Egain 2 0 1 0 5
+Isense_Egain 1 0 0
+
 R1 0 3 159.15
 R2 4 3 159.15
+
 * Signal source (Vt 1 0 dc 0 ac 1 180degrees)
-Vt 1 0 AC 1.00 180degrees
+Vt 1 0 DC 0V AC 1V 180degrees
 
 * NG-Spice Simulation Commands
-.OPTIONS NOPAGE NUMDGT=6 UNITS=Degress WIDTH=72
+.AC DEC 10 1Hz 1MegHz
+
 *.PRINT AC VDB(4) VP(4)
 .PRINT AC VR(4) VI(4)
-.AC DEC 10 1.00 100.00Meg
+
 
 .END
 
