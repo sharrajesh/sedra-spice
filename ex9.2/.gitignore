@@ -1,4 +1,3 @@
-#class_b-1.sch#
 class_b-1.gnucap.fo
 class_b-1.gnucap.tr
 class_b-1.ngspice.tr
@@ -8,3 +7,4 @@ class_b.sch~
 gspiceui.log
 class_b.ckt
 class_b.sch
+#class_b-1.sch#
