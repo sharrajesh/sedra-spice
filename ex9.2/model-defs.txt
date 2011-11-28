@@ -1,0 +1,10 @@
+.MODEL RAJ_NA51 NPN  (Is=10f Xti=3 Eg=1.11 Vaf=100 Bf=100 Ise=0 Ne=1.5 Ikf=0
++                       Xtb=1.5 Br=1 Isc=0 Nc=2 Ikr=0 Rc=0 Cjc=76.97p Mjc=.2072
++                       Vjc=0.75 Fc=0.5 Cje=5p Mje=0.3333 Vje=0.75 Tr=10n Tf=1n Itf=1 Xtf=0 Vtf=10)
+
+
+.MODEL RAJ_NA52 pnp  (Is=10f Xti=3 Eg=1.11 Vaf=100 Bf=100 Ise=0 Ne=1.5 Ikf=0
++                       Xtb=1.5 Br=1 Isc=0 Nc=2 Ikr=0 Rc=0 Cjc=112.6p Mjc=.1875
++                       Vjc=0.75 Fc=0.5 Cje=5p Mje=0.3333 Vje=0.75 Tr=10n Tf=1n Itf=1 Xtf=0 Vtf=10)
+
+
