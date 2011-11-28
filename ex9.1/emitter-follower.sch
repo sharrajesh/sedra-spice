@@ -60,7 +60,7 @@ device=vsin
 T 46100 49350 5 10 0 0 0 0 1
 footprint=none
 T 46100 48750 5 10 1 1 0 0 1
-value=sin 0 1 1meg
+value=sin 0 1 1k
 }
 C 47800 50300 1 0 0 vcc-1.sym
 C 48200 45500 1 180 0 vee-1.sym
