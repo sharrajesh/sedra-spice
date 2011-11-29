@@ -1,0 +1,17 @@
+\#*.sch#
+*.sch~
+*.sym~
+
+gspiceui.log
+prcbase.log
+*out.txt
+
+*.ngspice.tr
+*.ngspice.ac
+*.ngspice.dc
+
+*.gnucap.ac
+*.gnucap.dc
+*.gnucap.op
+
+
