@@ -4,4 +4,4 @@ opamp.sch~
 gspiceui.log
 opamp.gnucap.dc
 opamp.ngspice.dc
-#opamp.sch#
+\#opamp.sch#

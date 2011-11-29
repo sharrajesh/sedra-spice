@@ -2,4 +2,4 @@ diode-iv-char.ngspice.dc
 gspiceui.log
 diode-iv-char.sch~
 out.txt
-#diode-iv-char.sch#
+\#diode-iv-char.sch#
