@@ -1,0 +1,10 @@
+.MODEL RAJ_NPN NPN  ( Bf=200 Br=2.0 Vaf=125V Is=10fA Tf=0.35ns 
++                     Rb=200 Rc=200 Re=2 Cje=1.0pF Vje=0.7V Mje=0.33 Cjc=0.3pF
++                     Vjc=0.55V Mjc=0.5 Cjs=3.0pF Vjs=0.52V Mjs=0.5 )
+
+
+.MODEL RAJ_PNP PNP  ( Bf=50 Br=4.0 Vaf=50V Is=10fA Tf=30ns 
++                     Rb=300 Rc=100 Re=10 Cje=0.3pF Vje=0.55V Mje=0.5 Cjc=1.0pF
++                     Vjc=0.55V Mjc=0.5 Cjs=3.0pF Vjs=0.52V Mjs=0.5 )
+
+
