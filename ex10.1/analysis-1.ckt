@@ -1,4 +1,5 @@
 .include 741-1.ckt
+Vd 101 0 DC 0V
 .op
 .DC Vd -400uV -200uV 10uV
 .PRINT DC V(22)

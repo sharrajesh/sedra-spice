@@ -31,7 +31,10 @@ Isense_Evplus 101 0 dc 0
 IOut_Evplus 1 100 dc 0
 * end vcvs expansion
 Rd 0 101 1  
-Vd 101 0 DC 0V
+
+*Raj- We might have to change this for other analyses
+*Vd 101 0 DC 0V
+
 Vee Vee 0 DC -15V
 Vcc Vcc 0 DC 15V
 Q21 20 21 22 RAJ_PNP 

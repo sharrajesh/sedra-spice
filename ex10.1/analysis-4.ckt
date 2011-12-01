@@ -1,0 +1,13 @@
+
+* Raj- Here we are performing the frequency responce of the opamp
+
+.include 741-1.ckt
+
+* Raj- We apply the negative offset and later ac sweep
+Vd 101 0 DC -314.1uV  AC 1V
+
+.AC DEC 10 0.1Hz 100MegHz
+
+.PRINT AC Vdb(22) Vp(22)
+
+.end

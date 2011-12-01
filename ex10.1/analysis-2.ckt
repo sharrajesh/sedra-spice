@@ -1,0 +1,4 @@
+.include 741-1.ckt
+Vd 101 0 DC -314.1uV
+.op
+.end

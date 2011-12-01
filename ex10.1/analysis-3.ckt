@@ -1,0 +1,14 @@
+.include 741-1.ckt
+* Raj- We apply the negative offset and do the command mode sweep
+Vd 101 0 DC -314.1uV
+
+*Raj- to get the transfer function
+.TF V(22) Vd
+
+.op
+
+.DC Vcm -15V 15V .1V
+
+.PRINT DC V(22)
+
+.end
