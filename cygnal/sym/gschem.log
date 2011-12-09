@@ -1,0 +1,11 @@
+gEDA/gschem version 20030525
+gEDA/gschem comes with ABSOLUTELY NO WARRANTY; see COPYING for more details.
+This is free software, and you are welcome to redistribute it under certain
+conditions; please see the COPYING file for more details.
+
+Read system-gschemrc file [/etc/gEDA/system-gschemrc]
+Did not find ~/.gEDA/gschemrc file [/home/wzab/.gEDA/gschemrc]
+Did not find local gschemrc file [./gschemrc]
+Read init scm file [/usr/share/gEDA/scheme/gschem.scm]
+Saved As [/home/wzab/biezace/USB/cygnal_usb/sym/usb_b.sym]
+Saved [/home/wzab/biezace/USB/cygnal_usb/sym/usb_b.sym]
